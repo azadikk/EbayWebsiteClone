@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300;400&family=Ubuntu&display=swap');
+
+* { 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-top-section {
+    font-size: 12px;
+    top: -35px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+
+/* left tag in position */
+.left-tags {
+    position: relative;
+    left: -12rem;
+}
+.left-tags :nth-child(1) {
+    color: black;
+    margin: 5px;
+}
+.left-tags :nth-child(2) {
+    color: black;
+}
+.left-right-tags {
+     position: relative;
+     left: -11rem;
+}
+.left-right-tags a {
+    margin: 7px;
+    text-decoration: none;
+}
+.left-right-tags a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Right-tag in position */
+
+.right-tags {
+    display: flex;
+    position: relative;
+    right: -130px;
+}
+
+.right-tags .icons {
+    position: absolute;
+    right: -226px;
+    font-size: 20px;
+    word-spacing: 10px;
+    top: 2px;
+}
+
+.right-tags a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    margin: 6px;
+}
+
+
+.right-tags .ship-to:hover {
+    color: blue;
+}
+.right-tags .sell:hover {
+    text-decoration: underline;
+}
+.right-tags #bi-bell {
+    margin: 7px;
+    cursor: pointer;
+}
+.right-tags #bi-cart {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right-tags #bi-cart:hover {
+    color: blue;
+}
+.right-tags #caret-down {
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+
+/*  headerItems in position */
+
+.headerItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.headerItems img {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    left: 5rem;
+    top: -28px;
+}
+
+.shopBtn {
+    position: absolute;
+    left: 13rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.shopBtn:hover {
+    color: blue;
+}
+
+.searchInput {
+    position: absolute;
+    left: 26rem;
+}
+
+.searchInput .src {
+    width: 800px;
+    height: 40px;
+    padding: 15px;
+    position: relative;
+    right: 125px;
+    border: 2px solid black;
+    outline: none;
+}
+.src::placeholder {
+    font-size: 17px;
+}
+
+.searchInput #searchIcon {
+    display: none;
+    position: relative;
+    left: -31rem;
+    text-align: center;
+    font-size: 21px;
+}
+select {
+    padding: 8px;
+    border: none;
+    position: absolute;
+    border-left: 1px solid rgb(207, 207, 207);
+    right: 249px;
+    top: 2px;
+    margin: 0px 20px;
+    outline: none;
+}
+select option {
+    font-size: 12px;
+}
+.searchInput .BtnSearch {
+    position: absolute;
+    right: 19px;
+    padding: 12px;
+    width: 160px;
+    border: none;
+    background-color: #3665f3;
+    color: white;
+    cursor: pointer;
+}
+.BtnSearch:active {
+    transform: translateY(1px);
+}
+
+.searchInput .advanced {
+    position: relative;
+    right: -55px;
+    font-size: 13px;
+}
+.advanced a {
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+.advanced a:hover {
+    color: blue;
+}
+
+/* Javascript Class div */
+.right-tags .window {
+    position: absolute;
+    background-color: white;
+    top: 22px;
+    width: 450px;
+    height: 90px;
+    z-index: 999;
+    right: -55px;
+    border: 1px solid;
+    color: #e1e1e1;
+}
+.window .signInfo {
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    color: rgb(107, 107, 107);
+}
+.signInfo a {
+    text-decoration: underline;
+    color: black;
+
+}
+.myEbayWindow {
+    position: absolute;
+    background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 190px;
+    height: 300px;
+    top: 28px;
+    right: -257px;
+    z-index: 999;
+}
+.myEbayWindow ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    z-index: 50;
+}
+ul li {
+    display: flex;
+    list-style-type: none;
+    margin-right: 2em;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.openWindowNotification {
+    background-color: #ffffff;
+    width: 353px;
+    height: 197px;
+    position: inherit;
+    right: 48px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.3);
+}
+
+.openWindowNotification span a {
+    color: #000fc9;
+    text-decoration: underline;
+}
+
+.openStoreWindow {
+    background-color: #ffff;
+    width: 350px;
+    height: 160px;
+    position: inherit;
+    right: 30px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+.ShopBtnWindow {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 668px;
+    height: 451px;
+    box-shadow: 0px 0px 10px rgb(0,0,0, 0.30);
+    z-index: 1001;
+    position: absolute;
+    top: 32px;
+    left: 13rem;
+}
+.shopBtn:active {
+    transform: translateY(1px);
+}
+.ShopBtnWindow .content-ul {
+    max-width: 668px;
+    max-height: 451px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+.content-ul a {
+    font-size: 13px;
+    color: rgb(100, 100, 100);
+}
+.content-ul .li-parent-1 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-1 a:hover {
+    color: blue;
+}
+
+
+.content-ul .li-parent-2 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-2 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-2 a:hover {
+    color: blue;
+}
+
+
+
+
+.content-ul .li-parent-3 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-3 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-3 a:hover {
+    color: blue;
+}
+
+
+
+.content-ul .li-parent-4 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-4 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-4 a:hover {
+    color: blue;
+}
+
+
+
+.content-ul .li-parent-5 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-5 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-5 a:hover {
+    color: blue;
+}
+
+
+
+.content-ul .li-parent-6 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-6 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-6 a:hover {
+    color: blue;
+}
+
+
+
+.content-ul .li-parent-7 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-7 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-7 a:hover {
+    color: blue;
+}
+
+
+
+.content-ul .li-parent-8 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-8 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-8 a:hover {
+    color: blue;
+}
+
+
+
+.content-ul .li-parent-9 a{
+    font-size: 15px;
+}
+.content-ul .li-parent-9 a{
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.content-ul .li-parent-9 a:hover {
+    color: blue;
+}
+
+
+
+
+
+.content-ul .parent-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrp;
+    position: relative;
+    left: -222px;
+    top: -35px;
+    align-items: center;
+}
+.content-ul .parent-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -213px;
+    top: -18px;
+    align-items: center;
+}
+.content-ul .parent-3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -162px;
+    top: -11px;
+    align-items: center;
+}
+
+
+
+
+
+
+.header-down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-down .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    font-size: 13px;
+    column-gap: 10px;
+}
+
+.container li a {
+    color: rgb(75, 75, 75)
+}
+
+.container .without-li .active {
+    border-bottom: 2px solid black;
+}
+.without-li .active a {
+    cursor: default;
+    color: black;
+}
+.without-li .active a:hover {
+    text-decoration: none;
+    cursor:text;
+}
+
+.container .border-top {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    top: 105px;
+}
+.container .border-bottom {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    top: 145px;
+}
+
+
+.marketing {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.marketing .popular-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.popular-categories .ul-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -200px;
+}
+.ul-categories img {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.ul-categories img:hover {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.ul-categories li a {
+    position: relative;
+    right: -50px;
+    font-size: 15px;
+}
+.popular-categories .eticetCategories {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: -240px;
+    left: -450px;
+    font-size: 23px;
+    column-gap: 5px;
+}
+.eticetCategories a {
+    color: black;
+    margin: 10px;
+    font-weight: 700;
+}
+.eticetCategories a:hover{
+    color: black;
+}
+.eticetCategories .seeall {
+    font-weight: 500;
+}
+
+
+/* electronics kateqoriya css */
+.electronics {
+    width: 1203px;
+    height: 301px;
+    background-color: #fbf8f8;
+    position: absolute;
+    z-index: 100;
+    top: 148px;
+    left: 27px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0,50);
+}
+
+.electronics .header-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -11px;
+}
+.header-first ul li a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -14px;
+    font-size: 13px;
+    color: #3e3e3e;
+    top: -6px;
+    margin-top: 10px;
+}
+.header-first h1 {
+    position: relative;
+    font-size: 17px;
+    top: 5px;
+    font-weight: 600;
+    border-bottom: 1px solid #c5c5c5;
+    margin: 10px 0px;
+}
+
+.electronics .header-second h2 {
+    position: relative;
+    font-size: 17px;
+    top: 26.5px;
+    font-weight: 600;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.header-second a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -14px;
+    font-size: 13px;
+    color: black;
+    top: 18px;
+    margin-top: 10px;
+
+}
+
+.electronics img {
+    position: absolute;
+    width: 754px;
+    height: 298px;
+    right: 4px;
+}
+
+.motors {
+    width: 1200px;
+    height: 300px;
+    background-color: #fbf8f8;
+    position: absolute;
+    z-index: 100;
+    top: 148px;
+    left: 27px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0,50);
+}
+
+.motors .header-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -11px;
+}
+.header-first ul li a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -14px;
+    font-size: 13px;
+    color: #3e3e3e;
+    top: -6px;
+    margin-top: 10px;
+}
+.header-first h1 {
+    position: relative;
+    font-size: 17px;
+    top: 0px;
+    font-weight: 600;
+    border-bottom: 1px solid #c5c5c5;
+    margin: 10px 0px;
+}
+
+.motors .header-second h2 {
+    position: relative;
+    font-size: 17px;
+    top: 26.5px;
+    font-weight: 600;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.header-second a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -14px;
+    font-size: 13px;
+    color: black;
+    top: 18px;
+    margin-top: 10px;
+
+}
+
+.motors img {
+    position: absolute;
+    width: 754px;
+    height: 298px;
+    right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-down .fashion-window {
+    width: 1200px;
+    height: 300px;
+    background-color: #fbf8f8;
+    position: absolute;
+    z-index: 100;
+    top: 148px;
+    left: 27px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0,50);
+}
+
+.fashion-window .left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -11px;
+}
+.left-box ul li a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -14px;
+    font-size: 13px;
+    color: #3e3e3e;
+    top: -6px;
+    margin-top: 10px;
+}
+.left-box h1 {
+    position: relative;
+    font-size: 17px;
+    top: 0px;
+    font-weight: 600;
+    border-bottom: 1px solid #c5c5c5;
+    margin: 10px 0px;
+}
+
+.fashion-window .right-box h2 {
+    position: relative;
+    font-size: 17px;
+    top: 26.5px;
+    font-weight: 600;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.right-box a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -14px;
+    font-size: 13px;
+    color: black;
+    top: 18px;
+    margin-top: 10px;
+
+}
+
+.fashion-window img {
+    position: absolute;
+    width: 754px;
+    height: 298px;
+    right: 4px;
+}

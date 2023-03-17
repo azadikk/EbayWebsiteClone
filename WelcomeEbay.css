@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    position: relative;
+}
+
+.images img {
+    background-image: url(pngwing.com\ \(12\).png);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 350px;
+    height: 230px;
+}
+
+
+.content-box {
+    margin: 130px 0px;
+    background-image: linear-gradient(white,rgb(172, 165, 165), #ececee, rgb(77, 77, 201));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(211, 211, 211);
+    top: 60px;
+    left: 24rem;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+.content-box .texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+.texts .t1 {
+    position: absolute;
+    bottom: 5rem;
+    font-weight: 800;
+    background-color: rebeccapurple;
+    padding: 17px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 10px purple;
+    color: white;
+}
+.texts .t2 {
+    position: absolute;
+    top: 240px;
+    font-size: 13px;
+    right: -2em;
+}
+.texts .t3 {
+    position: relative;
+    top: -30px;
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.content-box2 {
+    margin: 130px 0px;
+    background-image: linear-gradient(white,rgb(172, 165, 165), #ececee, rgb(77, 77, 201));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(211, 211, 211);
+    top: 60px;
+    left: 24rem;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+.content-box2 .texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+.texts .t1 {
+    position: absolute;
+    bottom: 5rem;
+    font-weight: 800;
+    background-color: rebeccapurple;
+    padding: 17px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 10px purple;
+    color: white;
+}
+.texts .t2 {
+    position: absolute;
+    top: 240px;
+    font-size: 13px;
+    right: -2em;
+}
+.texts .t3 {
+    position: relative;
+    top: -30px;
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.content-box3 {
+    margin: 130px 0px;
+    background-image: linear-gradient(white,rgb(172, 165, 165), #ececee, rgb(77, 77, 201));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(211, 211, 211);
+    top: 60px;
+    left: 24rem;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+.content-box3 .texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+.texts .t1 {
+    position: absolute;
+    bottom: 5rem;
+    font-weight: 800;
+    background-color: rebeccapurple;
+    padding: 17px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 10px purple;
+    color: white;
+}
+.texts .t2 {
+    position: absolute;
+    top: 240px;
+    font-size: 13px;
+    right: -2em;
+}
+.texts .t3 {
+    position: relative;
+    top: -30px;
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+
+@keyframes left-slide {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 24rem;
+    }
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
